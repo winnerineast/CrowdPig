@@ -1,0 +1,15 @@
+setup.py
+/home/nvidia/PycharmProjects/CrowdDet/utils/det_tools_cuda/csrc/vision.cpp
+/home/nvidia/PycharmProjects/CrowdDet/utils/det_tools_cuda/csrc/ROIAlign/ROIAlign_cpu.cpp
+/home/nvidia/PycharmProjects/CrowdDet/utils/det_tools_cuda/csrc/ROIAlign/ROIAlign_cuda.cu
+/home/nvidia/PycharmProjects/CrowdDet/utils/det_tools_cuda/csrc/cpu/nms_cpu.cpp
+/home/nvidia/PycharmProjects/CrowdDet/utils/det_tools_cuda/csrc/cuda/nms.cu
+/home/nvidia/PycharmProjects/CrowdPig/det_tools_cuda/csrc/vision.cpp
+/home/nvidia/PycharmProjects/CrowdPig/det_tools_cuda/csrc/ROIAlign/ROIAlign_cpu.cpp
+/home/nvidia/PycharmProjects/CrowdPig/det_tools_cuda/csrc/ROIAlign/ROIAlign_cuda.cu
+/home/nvidia/PycharmProjects/CrowdPig/det_tools_cuda/csrc/cpu/nms_cpu.cpp
+/home/nvidia/PycharmProjects/CrowdPig/det_tools_cuda/csrc/cuda/nms.cu
+det_tools_cuda.egg-info/PKG-INFO
+det_tools_cuda.egg-info/SOURCES.txt
+det_tools_cuda.egg-info/dependency_links.txt
+det_tools_cuda.egg-info/top_level.txt

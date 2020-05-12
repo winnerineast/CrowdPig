@@ -83,10 +83,11 @@ def train_dataset(seed=config.seed_dataprovider):
             continue
         yield dict(data=batch_images, boxes=batch_gts, im_info=batch_info)
 
+
 def val_dataset(record):
     image_id = record['ID']
     gtboxes = record['gtboxes']
-    image_path = os.path.join(config.image_folder, image_id + '.png')
+    image_path = os.path.join(config.image_folder, image_id + '.jpg')
     img = cv2.imread(image_path, cv2.IMREAD_COLOR)
     gt_boxes = misc_utils.load_gt(record, 'gtboxes', 'fbox', config.class_names)
     gt_boxes[:, 2:4] += gt_boxes[:, :2]

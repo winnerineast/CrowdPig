@@ -1,0 +1,40 @@
+{"ID": "284193,faa9000f2678b5e", "gtboxes": [{"tag": "person", "hbox": [123, 129, 63, 64], "head_attr": {"ignore": 0, "occ": 1, "unsure": 0}, "
+fbox": [61, 123, 191, 453], "vbox": [62, 126, 154, 446], "extra": {"box_id": 0, "occ": 1}}, {"tag": "person", "hbox": [214, 97, 58, 74], "head_
+attr": {"ignore": 0, "occ": 1, "unsure": 0}, "fbox": [165, 95, 187, 494], "vbox": [175, 95, 140, 487], "extra": {"box_id": 1, "occ": 1}}, {"tag
+": "person", "hbox": [318, 109, 58, 68], "head_attr": {"ignore": 0, "occ": 1, "unsure": 0}, "fbox": [236, 104, 195, 493], "vbox": [260, 106, 17
+0, 487], "extra": {"box_id": 2, "occ": 1}}, {"tag": "person", "hbox": [486, 119, 61, 74], "head_attr": {"ignore": 0, "occ": 0, "unsure": 0}, "f
+box": [452, 110, 169, 508], "vbox": [455, 113, 141, 501], "extra": {"box_id": 3, "occ": 1}}, {"tag": "person", "hbox": [559, 105, 53, 57], "hea
+d_attr": {"ignore": 0, "occ": 0, "unsure": 0}, "fbox": [520, 95, 163, 381], "vbox": [553, 98, 70, 118], "extra": {"box_id": 4, "occ": 1}}, {"ta
+g": "person", "hbox": [596, 40, 72, 83], "head_attr": {"ignore": 0, "occ": 0, "unsure": 0}, "fbox": [546, 39, 202, 594], "vbox": [556, 39, 171,
+ 588], "extra": {"box_id": 5, "occ": 1}}, {"tag": "person", "hbox": [731, 139, 69, 83], "head_attr": {"ignore": 0, "occ": 0, "unsure": 0}, "fbo
+x": [661, 132, 183, 510], "vbox": [661, 132, 183, 510], "extra": {"box_id": 6, "occ": 0}}]}
+{"ID": "273275,cd061000af95f691", "gtboxes": [{"tag": "person", "hbox": [285, 223, 25, 27], "head_attr": {"ignore": 0, "occ": 0, "unsure": 0},
+"fbox": [260, 221, 71, 232], "vbox": [260, 221, 71, 232], "extra": {"box_id": 0, "occ": 0}}, {"tag": "person", "hbox": [217, 234, 18, 19], "hea
+d_attr": {"ignore": 0, "occ": 0, "unsure": 0}, "fbox": [200, 233, 48, 161], "vbox": [200, 233, 48, 161], "extra": {"box_id": 1, "occ": 0}}, {"t
+ag": "person", "hbox": [170, 240, 16, 18], "head_attr": {"ignore": 0, "occ": 1, "unsure": 0}, "fbox": [148, 238, 55, 156], "vbox": [148, 238, 5
+5, 156], "extra": {"box_id": 2, "occ": 0}}, {"tag": "person", "hbox": [144, 248, 6, 7], "head_attr": {"ignore": 0, "occ": 1, "unsure": 0}, "fbo
+x": [138, 247, 19, 43], "vbox": [138, 248, 18, 43], "extra": {"box_id": 3, "occ": 1}}, {"tag": "person", "hbox": [126, 243, 7, 8], "head_attr":
+ {"ignore": 0, "occ": 1, "unsure": 0}, "fbox": [117, 242, 22, 52], "vbox": [122, 243, 16, 51], "extra": {"box_id": 4, "occ": 1}}, {"tag": "pers
+on", "hbox": [133, 246, 7, 6], "head_attr": {"ignore": 0, "occ": 1, "unsure": 0}, "fbox": [129, 244, 14, 42], "vbox": [132, 245, 12, 41], "extr
+a": {"box_id": 5, "occ": 1}}, {"tag": "person", "hbox": [-12, 242, 12, 12], "head_attr": {"ignore": 1, "occ": 1, "unsure": 0}, "fbox": [-20, 24
+1, 39, 102], "vbox": [1, 248, 19, 44], "extra": {"ignore": 0, "box_id": 6, "occ": 1, "unsure": 0}}, {"tag": "mask", "hbox": [24, 244, 19, 41],
+"head_attr": {}, "fbox": [24, 244, 19, 41], "vbox": [24, 244, 19, 41], "extra": {"ignore": 1}}, {"tag": "mask", "hbox": [466, 192, 136, 73], "h
+ead_attr": {}, "fbox": [466, 192, 136, 73], "vbox": [466, 192, 136, 73], "extra": {"ignore": 1}}, {"tag": "mask", "hbox": [501, 73, 66, 120], "
+head_attr": {}, "fbox": [501, 73, 66, 120], "vbox": [501, 73, 66, 120], "extra": {"ignore": 1}}, {"tag": "mask", "hbox": [573, 97, 28, 62], "he
+ad_attr": {}, "fbox": [573, 97, 28, 62], "vbox": [573, 97, 28, 62], "extra": {"ignore": 1}}, {"tag": "mask", "hbox": [531, 277, 68, 115], "head
+_attr": {}, "fbox": [531, 277, 68, 115], "vbox": [531, 277, 68, 115], "extra": {"ignore": 1}}, {"tag": "mask", "hbox": [375, 231, 19, 29], "hea
+d_attr": {}, "fbox": [375, 231, 19, 29], "vbox": [375, 231, 19, 29], "extra": {"ignore": 1}}, {"tag": "mask", "hbox": [382, 192, 38, 25], "head
+_attr": {}, "fbox": [382, 192, 38, 25], "vbox": [382, 192, 38, 25], "extra": {"ignore": 1}}, {"tag": "mask", "hbox": [242, 106, 67, 87], "head_
+attr": {}, "fbox": [242, 106, 67, 87], "vbox": [242, 106, 67, 87], "extra": {"ignore": 1}}, {"tag": "mask", "hbox": [190, 137, 48, 54], "head_a
+ttr": {}, "fbox": [190, 137, 48, 54], "vbox": [190, 137, 48, 54], "extra": {"ignore": 1}}, {"tag": "mask", "hbox": [328, 243, 27, 77], "head_at
+tr": {}, "fbox": [328, 243, 27, 77], "vbox": [328, 243, 27, 77], "extra": {"ignore": 1}}, {"tag": "mask", "hbox": [67, 118, 25, 57], "head_attr
+": {}, "fbox": [67, 118, 25, 57], "vbox": [67, 118, 25, 57], "extra": {"ignore": 1}}, {"tag": "mask", "hbox": [47, 128, 17, 50], "head_attr": {
+}, "fbox": [47, 128, 17, 50], "vbox": [47, 128, 17, 50], "extra": {"ignore": 1}}, {"tag": "mask", "hbox": [66, 213, 19, 30], "head_attr": {}, "
+fbox": [66, 213, 19, 30], "vbox": [66, 213, 19, 30], "extra": {"ignore": 1}}, {"tag": "mask", "hbox": [60, 180, 14, 34], "head_attr": {}, "fbox
+": [60, 180, 14, 34], "vbox": [60, 180, 14, 34], "extra": {"ignore": 1}}, {"tag": "mask", "hbox": [183, 203, 16, 36], "head_attr": {}, "fbox":
+[183, 203, 16, 36], "vbox": [183, 203, 16, 36], "extra": {"ignore": 1}}, {"tag": "mask", "hbox": [253, 198, 32, 20], "head_attr": {}, "fbox": [
+253, 198, 32, 20], "vbox": [253, 198, 32, 20], "extra": {"ignore": 1}}, {"tag": "mask", "hbox": [300, 196, 50, 26], "head_attr": {}, "fbox": [3
+00, 196, 50, 26], "vbox": [300, 196, 50, 26], "extra": {"ignore": 1}}, {"tag": "mask", "hbox": [356, 279, 41, 25], "head_attr": {}, "fbox": [35
+6, 279, 41, 25], "vbox": [356, 279, 41, 25], "extra": {"ignore": 1}}, {"tag": "mask", "hbox": [458, 29, 79, 76], "head_attr": {}, "fbox": [458,
+ 29, 79, 76], "vbox": [458, 29, 79, 76], "extra": {"ignore": 1}}, {"tag": "mask", "hbox": [136, 148, 32, 45], "head_attr": {}, "fbox": [136, 14
+8, 32, 45], "vbox": [136, 148, 32, 45], "extra": {"ignore": 1}}]}

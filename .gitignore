@@ -153,3 +153,14 @@ det_tools/__pycache__/
 det_tools_cuda/build/bdist.linux-x86_64/
 layers/__pycache__/
 outputs/
+annotation_tools/CMakeCache.txt
+annotation_tools/CMakeFiles/3.15.2/
+annotation_tools/CMakeFiles/CMakeDirectoryInformation.cmake
+annotation_tools/CMakeFiles/CMakeTmp/
+annotation_tools/CMakeFiles/Makefile.cmake
+annotation_tools/CMakeFiles/Makefile2
+annotation_tools/CMakeFiles/TargetDirectories.txt
+annotation_tools/CMakeFiles/cmake.check_cache
+annotation_tools/CMakeFiles/progress.marks
+annotation_tools/CMakeFiles/yolo_mark.dir/
+annotation_tools/yolo_mark

@@ -2,10 +2,12 @@ import os
 import json
 import numpy as np
 
+
 def load_img(image_path):
     import cv2
     img = cv2.imread(image_path, cv2.IMREAD_COLOR)
     return img
+
 
 def load_json_lines(fpath):
     assert os.path.exists(fpath)
@@ -14,11 +16,13 @@ def load_json_lines(fpath):
     records = [json.loads(line.strip('\n')) for line in lines]
     return records
 
+
 def save_json_lines(content,fpath):
     with open(fpath,'w') as fid:
         for db in content:
             line = json.dumps(db)+'\n'
             fid.write(line)
+
 
 def device_parser(str_device):
     if '-' in str_device:
@@ -28,19 +32,23 @@ def device_parser(str_device):
         device_id = [int(str_device)]
     return device_id
 
+
 def ensure_dir(dirpath):
     if not os.path.exists(dirpath):
         os.makedirs(dirpath)
+
 
 def xyxy_to_xywh(boxes):
     assert boxes.shape[1]>=4
     boxes[:, 2:4] -= boxes[:,:2]
     return boxes
 
+
 def xywh_to_xyxy(boxes):
     assert boxes.shape[1]>=4
     boxes[:, 2:4] += boxes[:,:2]
     return boxes
+
 
 def load_bboxes(dict_input, key_name, key_box, key_score=None, key_tag=None):
     assert key_name in dict_input
@@ -64,6 +72,7 @@ def load_bboxes(dict_input, key_name, key_box, key_score=None, key_tag=None):
             bboxes = np.vstack([rb[key_box] for rb in dict_input[key_name]])
     return bboxes
 
+
 def load_masks(dict_input, key_name, key_box):
     assert key_name in dict_input
     if len(dict_input[key_name]) < 1:
@@ -72,6 +81,7 @@ def load_masks(dict_input, key_name, key_box):
         assert key_box in dict_input[key_name][0]
     masks = np.array([rb[key_box] for rb in dict_input[key_name]])
     return masks
+
 
 def load_gt(dict_input, key_name, key_box, class_names):
     assert key_name in dict_input
@@ -93,6 +103,7 @@ def load_gt(dict_input, key_name, key_box, class_names):
     bboxes = np.vstack(bbox).astype(np.float64)
     return bboxes
 
+
 def boxes_dump(boxes, is_gt):
     result = []
     boxes = boxes.tolist()
@@ -109,6 +120,7 @@ def boxes_dump(boxes, is_gt):
             box_dict['score'] = box[-1]
             result.append(box_dict)
     return result
+
 
 def clip_boundary(boxes,height,width):
     assert boxes.shape[-1]>=4

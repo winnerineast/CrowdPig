@@ -46,7 +46,7 @@ class Config:
 
     # ----------train config---------- #
     bn_training = False
-    train_batch_per_gpu = 2
+    train_batch_per_gpu = 1
     momentum = 0.9
     weight_decay = 1e-4
     base_lr = 1e-3 * train_batch_per_gpu * 1.25

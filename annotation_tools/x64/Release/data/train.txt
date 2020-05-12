@@ -1,0 +1,10 @@
+x64/Release/data/img/air1.jpg
+x64/Release/data/img/air2.jpg
+x64/Release/data/img/air3.jpg
+x64/Release/data/img/air4.jpg
+x64/Release/data/img/air5.jpg
+x64/Release/data/img/air6.jpg
+x64/Release/data/img/bird1.jpg
+x64/Release/data/img/bird2.jpg
+x64/Release/data/img/bird3.jpg
+x64/Release/data/img/bird4.jpg

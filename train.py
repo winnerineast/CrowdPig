@@ -13,6 +13,7 @@ import misc_utils
 from config import config
 from dataset import train_dataset
 
+
 def process(data_generater, num_gpus):
     images = []
     gt_boxes = []
@@ -29,12 +30,15 @@ def process(data_generater, num_gpus):
     im_info = torch.Tensor(np.vstack(im_info)).cuda()
     return images, gt_boxes, im_info
 
+
 def adjust_learning_rate(optimizer,epoch,lr):
     learning_rate = lr
     lr = learning_rate*(0.1**(epoch//10))
     for param_group in optimizer.param_groups:
         param_group['lr'] = lr
+
     return lr
+
 
 def train(params):
     total_nr_iters = config.train_base_iters
@@ -67,6 +71,7 @@ def train(params):
     print(line)
     print("Building netowrk.")
     net = network.Network()
+    # Moves all model parameters and buffers to the GPU.
     net.cuda()
     if params.resume_weights:
         model_file = os.path.join(saveDir, 'dump-{}.pth'.format(params.resume_weights))
@@ -78,10 +83,13 @@ def train(params):
         weight_decay=config.weight_decay)
     # check if resume training
     training_data = train_dataset()
+
     net.train()
+
     if(params.progressbar):
         tqdm.monitor_interval = 0
         pbar = tqdm(total=train_iter, leave=False, ascii=True)
+
     dump_num = 1
     start_iter = 0
     if params.resume_weights:
@@ -91,6 +99,7 @@ def train(params):
         if(start_iter >= train_lr_decay[1]):
             optimizer.param_groups[0]['lr'] = train_lr / 100
         dump_num = int(params.resume_weights) + 1
+
     for step in range(start_iter, train_iter):
         # warm up
         if step < config.warm_iter:
@@ -104,7 +113,6 @@ def train(params):
         elif step == train_lr_decay[1]:
             optimizer.param_groups[0]['lr'] = train_lr / 100
         # get training data
-        # print(training_data)
         images, gt_boxes, img_info = process(training_data, num_gpus)
         optimizer.zero_grad()
         # forwad
@@ -132,8 +140,10 @@ def train(params):
                 state_dict = net.module.state_dict(),
                 optimizer = optimizer.state_dict())
             torch.save(model,fpath)
+
     if(params.progressbar):
         pbar.close()
+
     fid_log.close()
 
 def run_train():

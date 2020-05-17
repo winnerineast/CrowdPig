@@ -256,7 +256,6 @@ protected:
 
 int main(int argc, char *argv[])
 {
-
 	try
 	{
 		std::locale loccomma(std::locale::classic(), new comma);

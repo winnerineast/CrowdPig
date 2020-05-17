@@ -1,6 +1,7 @@
 import math
 import torch
 
+
 class _NewEmptyTensorOp(torch.autograd.Function):
     @staticmethod
     def forward(ctx, x, new_shape):
@@ -11,6 +12,7 @@ class _NewEmptyTensorOp(torch.autograd.Function):
     def backward(ctx, grad):
         shape = ctx.shape
         return _NewEmptyTensorOp.apply(grad, shape), None
+
 
 #Conv2d = torch.nn.Conv2d
 class Conv2d(torch.nn.Conv2d):

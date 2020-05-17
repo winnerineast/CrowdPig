@@ -16,6 +16,7 @@ from layers.pooler import ROIPooler
 from det_tools.img_utils import pad_tensor_to_multiple_number
 from det_tools.load_utils import _init_backbone
 
+
 class Network(nn.Module):
     def __init__(self):
         super().__init__()
@@ -60,6 +61,7 @@ class Network(nn.Module):
         pred_bbox = self.RCNN(fpn_fms, rpn_rois)
         pred_bbox[:, :-1] /= im_info[0, 2]
         return pred_bbox.cpu().detach()
+
 
 class RPN(nn.Module):
     def __init__(self):
@@ -131,6 +133,7 @@ class RPN(nn.Module):
         else:
             return rpn_rois, rpn_rois_inds
 
+
 class RCNN(nn.Module):
     def __init__(self):
         super().__init__()
@@ -190,6 +193,7 @@ class RCNN(nn.Module):
             pred_bbox = torch.cat([pred_bbox, pred_scores[:, 1].reshape(-1,1)], dim=1)
             return pred_bbox
 
+
 def restore_bbox(rois, deltas, unnormalize=True):
     if unnormalize:
         std_opr = torch.tensor(config.bbox_normalize_stds[None, :]
@@ -201,10 +205,12 @@ def restore_bbox(rois, deltas, unnormalize=True):
     pred_bbox = bbox_transform_inv_opr(rois, deltas)
     return pred_bbox
 
+
 def _init_weights(layer):
     nn.init.kaiming_uniform_(layer.weight, a=1)
     if layer.bias is not None:
         nn.init.constant_(layer.bias, 0)
+
 
 if __name__ == "__main__":
     net = Network()
